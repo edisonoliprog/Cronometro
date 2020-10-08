@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Cronometro</title>
+</head>
+
+<style>
+    * {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(77, 0, 0);
+    }
+
+    .max-width {
+        max-width: 600px;
+        width: 150%;
+        padding: 40px;
+        box-sizing: border-box;
+        margin-top: 15%;
+        background-color: rgb(255, 204, 204);
+        box-shadow: 0 0 5px #FFF;
+        text-align: center;
+        border-color: red;
+        border-top: red;
+    }
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 20px;
+        border: none;
+        outline: none;
+        font-family: 'Segoe UI';
+        font-size: 1.1em;
+        transition: all .5s;
+        cursor: pointer;
+        border-radius: 1px;
+    }
+
+    button:hover {
+        background-color: rgb(236, 54, 54);
+    }
+
+    button:active {
+        background-color: rgb(236, 54, 54);
+    }
+
+    .bg-green {
+        background-color: rgb(236, 54, 54);
+    }
+
+    .bg-yellow {
+        background-color: rgb(236, 54, 54);
+    }
+
+    .bg-red {
+        background-color: rgb(236, 54, 54);
+    }
+</style>
+
+<body>
+
+    <div class="max-width">
+        <button onclick="start();" class="bg-green">Iniciar</button>
+        <button onclick="pause();" class="bg-yellow">Pausar</button>
+        <button onclick="stop();" class="bg-red">Reinicar</button>
+        <h1 id="counter">00:00:00</h1>
+    </div>
+<script src="cron.js"></script>
+</body>
+
+</html>
